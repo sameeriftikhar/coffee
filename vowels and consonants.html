@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowels and consonants</title>
+</head>
+<body>
+    <script>
+     // Count the number of vowels in a statement
+
+const statement = "rana fahad ";
+
+const arrr = statement.split('');
+console.log(arrr);
+
+ vowelcount = 0;
+ constcount = 0;
+
+for (const word of arrr) {
+
+    if(word == 'a' || word == 'A'){
+
+        vowelcount+=1;
+
+    }
+    else if(word == 'e' || word == 'E'){
+
+        vowelcount+=1;
+        
+    }
+    else if(word == 'i' || word == 'I'){
+
+        vowelcount+=1;
+
+    }
+    else if(word == 'o' || word == 'O'){
+
+        vowelcount+=1;
+
+    }
+    else if(word == 'u' || word == 'U'){
+
+        vowelcount+=1;
+
+    }
+    else if(word == " "){
+
+    }
+    else{
+        constcount+=1;
+    }
+}
+
+console.log("Vowels: "+vowelcount);
+console.log("Consonants: "+constcount);
+     </script>
+</body>
+</html>
